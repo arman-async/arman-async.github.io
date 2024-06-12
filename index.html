@@ -1,12 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Alireza(arman-async)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
+
 <body>
-    <center dir="auto">
-    <a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/arman-async">
-      <img src="https://camo.githubusercontent.com/02812400fc0808b4c002a2483c6b850d73641124f98d2df25fe4bb233cd8a52f/68747470733a2f2f726561646d652d747970696e672d7376672e6865726f6b756170702e636f6d2f3f636f6c6f723d3030623366662673697a653d33352663656e7465723d74727565267643656e7465723d747275652677696474683d31303030266c696e65733d48454c4c4f2546302539462539312538423b49276d2b66726f6d2b4972616e276d2b31372b79656172732b6f6c643b6d792b6e616d652b69732b416c6972657a612861726d616e2d6173796e63293b57656c636f6d6521" alt="Typing SVG" data-canonical-src="https://readme-typing-svg.herokuapp.com/?color=00b3ff&amp;size=35&amp;center=true&amp;vCenter=true&amp;width=1000&amp;lines=HELLO%F0%9F%91%8B;I'm+from+Iran'm+17+years+old;my+name+is+Alireza(arman-async);Welcome!" style="max-width: 100%;">
-    </a>
-  </center>
+    <main>
+        <div class="head">
+            <a href="#" class="exit">خروج</a>
+            <h4 class="inventory">موجودی :104,136,772 تومان</h4>
+        </div>
+        <hr>
+        <div class="chart-box">
+            <button>... 2.82</button>
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            <h1 id="X"></h1>
+        </div>
+        <div class="price-input-box">
+            <h4 class="price">مبلغ</h4>
+            <input type="text" class="price-input" id="price-input" placeholder="8.800.000">
+            <span class="twoX">2X</span>
+            <div class="tooman">تومان</div>
+        </div>
+        <div class="auto-withdraw">
+            <h3 class="title">برداشت اتوماتیک در این ضریب</h3>
+            <span>oo</span>
+            <div class="withdraw-input">
+                <input type="range">
+            </div>
+        </div>
+        <div class="withdraw-button">
+            <!-- <input type="button" class="withdraw" id="start" value="شروع" onclick="start_stop()"> -->
+             <button class="start" onclick="start_stop()">شروع</button>
+        </div>
+        <div class="user-table">
+            <div class="game-history">تاریخچه بازی</div>
+            <table class="user">
+                <tr>
+                    <th>انفجار</th>
+                    <th>@</th>
+                    <th>مبلغ شرط</th>
+                    <th>سود</th>
+                </tr>
+                <tr>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>8.800.00</th>
+                    <th>-</th>
+                </tr>
+                <tr>
+                    <th>1.17</th>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                </tr>
+                <tr>
+                    <th>4.29</th>
+                    <th>1.38</th>
+                    <th>3.850</th>
+                    <th>1.463</th>
+                </tr>
+                <tr>
+                    <th>1.24</th>
+                    <th></th>
+                    <th>-</th>
+                    <th>-</th>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+
+
 </body>
+
+<script src="script.js"></script>
+
+
 </html>

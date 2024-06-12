@@ -1,0 +1,215 @@
+@font-face {
+  font-family: vazir;
+  src: url(./font/Vazir-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vazir;
+}
+
+  body {
+    width: 320px;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .head {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25px;
+  }
+  main .head a {
+    position: absolute;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff2d2d;
+  }
+  main .head h4 {
+    margin-right: 60px;
+    font-weight: 700;
+  }
+
+  main .chart-box {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  main .chart-box button {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #ff2d2d;
+    color: #ffff;
+  }
+
+  main .chart-box canvas {
+    height: 200px;
+  }
+
+  main .chart-box h1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #169116;
+  }
+  main .chart-box h1.color-black {
+    color: black;
+  }
+  main .chart-box h1.color-red {
+    color: red;
+    font-size: 2rem;
+  }
+
+  main .price-input-box {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding: 0px 7px;
+    /* border: 1px solid red; */
+  }
+  main .price-input-box h4 {
+    color: gray;
+    margin-left: 6px;
+  }
+
+  main .price-input-box .price-input {
+    margin-top: 3px;
+    margin-left: 4px;
+    padding: 3px 6px;
+    border: 1px solid #6d6d6d;
+    font-size: 1.01em;
+    width: 74%;
+  }
+  main .price-input-box .twoX {
+    position: absolute;
+    top: 32px;
+    right: 87px;
+    padding: 2px 5px;
+    background-color: #adadad;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #646464;
+  }
+  main .price-input-box .tooman {
+    position: absolute;
+    padding: 3px 18px;
+    background-color: #adadad;
+    border: 1px solid #6d6d6d;
+    right: 9px;
+    bottom: 9px;
+  }
+
+  main .auto-withdraw {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
+
+  main .auto-withdraw .title {
+    color: gray;
+    margin-left: 3px;
+  }
+  main .auto-withdraw span {
+    position: absolute;
+    background-color: #adadad;
+    padding: 1px 20px;
+    bottom: 30px;
+    text-align: center;
+    border: 1px solid #6d6d6d;
+  }
+  main .auto-withdraw .withdraw-input {
+    position: absolute;
+    display: flex;
+    width: 76%;
+    height: 29px;
+    padding: 1px 55px;
+    background-color: #adadad;
+    border: 1px solid #6d6d6d;
+    bottom: 30px;
+    left: 67px;
+  }
+  main .auto-withdraw .withdraw-input input {
+    /* margin-left: -13px; */
+    accent-color: #169116;
+  }
+
+  main .withdraw-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  main .withdraw-button button {
+    border: 1px solid #004600;
+    background-color: #007a00;
+    outline: none;
+    padding: 5px 100px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    color: #ffff;
+  }
+
+  main .withdraw-button button.exit {
+    padding: 14px 110px;
+    font-size: 1rem;
+    background-color: #d38e0f;
+    border: 1px solid #916005;
+  }
+
+
+  main .user-table {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+  }
+  main .user-table .game-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.2em;
+    width: 86%;
+    top: 105px;
+    right: 170px;
+    background-color: #c5c5c5;
+    height: 60px;
+    color: #ff2d2d;
+    transform: rotate(270deg);
+  }
+  main .user-table .user {
+    width: 89%;
+    height: 160px;
+    border-spacing: none;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+    margin-left: 37px;
+  }
+
+  main .user-table .user tr th {
+    padding: 14.8px 10px;
+    background-color: #c5c5c5;
+    /* background-color: red; */
+  }
+  main .user-table .user tr:nth-child(1) th {
+    background-color: gray;
+  }
+  main .user-table .user tr:nth-child(3) th:nth-child(1) {
+    color: red;
+  }
+  main .user-table .user tr:nth-child(5) th:nth-child(1) {
+    color: red;
+  }
